@@ -1,0 +1,11 @@
+---
+const { id, class: className } = Astro.props;
+---
+<!-- class="w-full h-full object-contain"  -->
+<div id={id} class={className}>
+  <img 
+    class="w-auto max-w-full max-h-[44px] xl:max-h-[66px]" 
+    src="/winhair-logo.webp" 
+    alt="Logo principal"
+  />
+</div>

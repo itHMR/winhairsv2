@@ -1,0 +1,262 @@
+---
+import "../styles/global.css";
+---
+<section id="aboutUs" data-header-color="#91C1C1" data-header-logo="1" class="bg-white h-screen w-screen relative flex justify-center flex-col px-6 py-10 sm:px-10 lg:px-16 2xl:px-44 md:py-14 xl:py-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
+        
+        <!-- Formulario -->
+        <div data-animation="animate__bounce" class="animate__animated flex flex-col">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-[Poppins] font-light mb-0 sm:mb-4 xl:mb-6 text-[#376374]">We’ll contact you!</h2>
+            
+            <form method="POST">
+                <p class="mb-4 text-gray-600 text-xs sm:text-sm font-normal">
+                    Fields marked with an asterisk <span class="text-red-600">*</span> are required.
+                </p>
+                
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-x-6">
+                    <div class="relative mb-2 md:mb-4 xl:mb-6">
+                        <label class="flex items-center font-[Poppins] mb-2 text-[#376374] text-sm">First Name <svg width="7" height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z" fill="#EF4444" />
+                            </svg>
+                        </label>
+                        <input autocomplete="off" id="first-name" type="text" class="block w-full h-8 xl:h-10 px-3 xl:px-4 py-2 xl:py-2.5 text-sm xl:text-base border border-gray-300 focus:outline-none focus:border-[#376374] focus:border-2 rounded-md">
+                    </div>
+                    <div class="relative mb-2 md:mb-4 xl:mb-6">
+                        <label class="flex items-center font-[Poppins] mb-2 text-[#376374] text-sm">Last Name <svg width="7" height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z" fill="#EF4444" />
+                            </svg>
+                        </label>
+                        <input autocomplete="off" id="last-name" type="text" class="block w-full h-8 xl:h-10 px-3 xl:px-4 py-2 xl:py-2.5 text-sm xl:text-base border border-gray-300 focus:outline-none focus:border-[#376374] focus:border-2 rounded-md">
+                    </div>
+                </div>
+                
+                <div class="relative mb-2 md:mb-4 xl:mb-6">
+                    <label class="flex items-center font-[Poppins] mb-2 text-[#376374] text-sm">Email <svg width="7" height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z" fill="#EF4444" />
+                            </svg>
+                    </label>
+                    <input autocomplete="off" id="email" type="email" class="block w-full h-8 xl:h-10 px-3 xl:px-4 py-2 xl:py-2.5 text-sm xl:text-base border border-gray-300 focus:outline-none focus:border-[#376374] focus:border-2 rounded-md">
+                </div>
+                
+                <div class="flex items-center my-4 xl:my-6">
+                    <input id="checkbox-policy" type="checkbox" class="w-4 h-4 xl:w-5 xl:h-5 mr-2 border border-gray-300 rounded-md focus:ring-[#376374]">
+                    <label id="news" for="checkbox-policy" class="font-[Poppins] text-[#376374] text-xs xl:text-sm">Sign up to receive news and updates</label>
+                </div>
+                
+                <div class="relative mb-2 md:mb-4 xl:mb-6">
+                    <label class="flex items-center font-[Poppins] mb-2 text-[#376374] text-sm">Subject <svg width="7" height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z" fill="#EF4444" />
+                            </svg>
+                    </label>
+                    <input autocomplete="off" id="subject" type="text" class="block w-full h-8 xl:h-10 px-3 xl:px-4 py-2 xl:py-2.5 text-sm xl:text-base border border-gray-300 focus:outline-none focus:border-[#376374] focus:border-2 rounded-md">
+                </div>
+
+                <div style="display:none;">
+                    <label for="website">Website</label>
+                    <input type="text" id="website" name="website" autocomplete="off">
+                </div>
+                
+                <div class="relative mb-5">
+                    <label class="flex items-center font-[Poppins] mb-2 text-[#376374] text-sm">Message <svg width="7" height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z" fill="#EF4444" />
+                            </svg>
+                    </label>
+                    <textarea id="message" class="block w-full h-16 md:h-26 xl:h-36 px-4 py-2.5 text-sm xl:text-base border border-gray-300 rounded-2xl focus:outline-none resize-none"></textarea>
+                </div>
+                
+                <button id="submit-btn" class="w-full cursor-pointer py-4 px-4 text-sm bg-[#376374] text-white rounded-lg font-semibold shadow-md transition-all duration-500 hover:bg-[#547785]">
+                    Send
+                </button>
+            </form>
+        </div>
+        
+        <!-- Mapa -->
+        <div data-animation="animate__bounce" class="animate__animated hidden md:flex flex-col">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-[Poppins] font-light mb-4 xl:mb-6 text-[#376374]">Plan your trip to Tijuana.</h2>
+            <p class="font-[Poppins] mb-6 text-sm lg:text-base xl:text-lg font-light text-gray-800">
+                Located only 10 minutes away from the San Ysidro Border Crossing, to make your trip even easier.
+            </p>
+            
+            <div class="w-full h-72 sm:h-96 md:h-full">
+                <iframe class="w-full h-full rounded-lg shadow-md" frameborder="0" scrolling="no" 
+                        src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=Av. Diego Rivera,  Zona Urbana Rio Tijuana, 22010&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    const form = document.querySelector('form');
+    const expresiones = {
+        name: /^[a-zA-ZÀ-ÿ\s]{3,40}$/, // Letras y espacios, pueden llevar acentos.
+        email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    }
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        let first_name = document.querySelector("#first-name");
+        let last_name = document.querySelector("#last-name");
+        let email = document.querySelector("#email");
+        let subject = document.querySelector("#subject");
+        let message = document.querySelector("#message");
+        let website = document.querySelector("#website");
+
+        if(message.value.trim() === '')
+        {
+            message.classList.add('error');
+        }
+        else
+        {
+            message.classList.remove('error');
+        }
+
+        if(subject.value.trim() === '')
+        {
+            subject.classList.add('error');
+        }
+        else
+        {
+            subject.classList.remove('error');
+        }
+
+        if (expresiones.name.test(first_name.value) == false) 
+        {
+            first_name.classList.add('error');
+        }
+        else
+        {
+            first_name.classList.remove('error');
+        }
+
+        if (expresiones.name.test(last_name.value) == false) 
+        {
+            last_name.classList.add('error');
+        }
+        else
+        {
+            last_name.classList.remove('error');
+        }
+
+        if (expresiones.email.test(email.value) == false) 
+        {
+            email.classList.add('error');
+        }
+        else
+        {
+            email.classList.remove('error');
+        }
+
+        if(website.value.trim() !== '')
+        {
+            Swal.fire({
+                title: "Nice try, bot 🤖",
+                text: "Your submission was blocked. Please fill out the form correctly.",
+                icon: "error",
+                confirmButtonText: "OK"
+            });
+        }
+        else
+        {
+            if(expresiones.name.test(first_name.value) && expresiones.name.test(last_name.value) && expresiones.email.test(email.value) && subject.value.trim() !== '' && message.value.trim() !== '')
+            {
+                const formData = new FormData();
+                fetchValidation('../mail/correo.php', formData);
+            }
+            else
+            {
+                Swal.fire({
+                    title: "Oops! 😅",
+                    text: "Looks like some fields are incomplete or incorrect. Could you fix them before submitting?",
+                    icon: "info",
+                    confirmButtonText: "Sure!"
+                });
+            }
+        }
+
+        
+    })
+
+    function fetchValidation($url, formData){
+        const submitBtn = document.getElementById('submit-btn');
+
+        // Deshabilitar botón y mostrar loader
+        if (submitBtn.disabled) return;
+        submitBtn.disabled = true;
+        
+        submitBtn.value = 'Sending...';
+
+        Swal.fire({
+            title: 'Sending message...',
+            text: 'Please wait a moment ⏳',
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            didOpen: () => {
+                Swal.showLoading();
+            }
+        });
+
+        const timeoutId = setTimeout(() => {
+            Swal.fire({
+                title: "All done! 🎉",
+                text: "Your message is on its way. Thanks for reaching out!",
+                icon: "success",
+                confirmButtonText: "Awesome!"
+            });
+            form.reset();
+        }, 5000); // Schedule for 5 seconds
+
+        /*fetch($url, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data); // ✅ ahora sí se debería ver el JSON bien
+            if (data.status) 
+            {
+                fetch('../mail/mail.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    Swal.fire({
+                        icon: 'success',
+                        title: data.message,
+                    });
+
+                    // Resetear el formulario
+                    form.reset();
+                })
+                .catch(error => {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: error.message,
+                    });
+                });
+            } 
+            else 
+            {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: data.message || "Algo salió mal en el primer envío 😔",
+                });
+            }
+        })
+        .catch(error => {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: error.message,
+            })
+        })
+        .finally(() => {
+            // Rehabilitar el botón
+            submitBtn.disabled = false;
+            submitBtn.value = 'Send Message';
+        });*/
+    }
+</script>

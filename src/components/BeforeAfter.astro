@@ -1,0 +1,11 @@
+---
+const { before, after } = Astro.props;
+---
+<section class="w-full max-w-4xl mx-auto">
+  <div class="twentytwenty-container rounded-2xl overflow-hidden shadow-lg">
+    <img src={`/${before}`} alt="Before" class="w-full h-auto object-cover" />
+    <img src={`/${after}`} alt="After" class="w-full h-auto object-cover" />
+  </div>
+</section>
+
+

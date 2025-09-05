@@ -23,22 +23,51 @@ import BeforeAfter from "../components/BeforeAfter.astro";
                   <BeforeAfter id="4" before="104-antes-1.webp" after="104-despues-1.webp" />
               </div>
           </div>
-          <!-- Botones -->
-          <div class="flex items-center gap-6 mt-6 md:mt-4 lg:justify-start justify-center">
-              <button id="slider-button-left" 
-                  class="swiper-button-prev group flex justify-center items-center border-2 border-solid border-[#005F6D] w-12 h-12 md:w-14 md:h-14 transition-all duration-500 rounded-full bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785]">
-                  <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
-                      <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+          <div class="flex items-center gap-12 mt-10 md:mt-8 lg:justify-start justify-center">
+              <button id="slider-button-left" class="swiper-button-prev group !p-1 flex justify-center items-center border-2 border-solid border-[#005F6D] bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785] !w-14 !h-14 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5" data-carousel-prev="" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-83b612d6f76c1ac4">
+                  <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+              </button>
+              <button id="slider-button-right" class="swiper-button-next group !p-1 flex justify-center items-center border-2 border-solid border-[#005F6D] bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785] !w-14 !h-14 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5" data-carousel-next="" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-83b612d6f76c1ac4">
+                  <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
               </button>
 
-              <button id="slider-button-right" 
-                  class="swiper-button-next group flex justify-center items-center border-2 border-solid border-[#005F6D] w-12 h-12 md:w-14 md:h-14 transition-all duration-500 rounded-full bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785]">
-                  <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
-                      <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <!--
+                <button id="slider-button-left" 
+                  class="swiper-button-prev group !p-2 flex justify-center items-center border-2 border-solid border-[#005F6D] 
+                        bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785] 
+                        !w-20 !h-20 md:!w-24 md:!h-24 transition-all duration-500 
+                        rounded-full !top-2/4 !-translate-y-8 !left-5 shadow-lg hover:shadow-2xl transform hover:scale-110"
+                  data-carousel-prev="" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-83b612d6f76c1ac4">
+
+                  <svg class="h-8 w-8 md:h-10 md:w-10 text-white transition-transform duration-500 group-hover:-translate-x-1" 
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
+                      <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-              </button>
+                </button>
+
+                <button id="slider-button-right" 
+                    class="swiper-button-next group !p-2 flex justify-center items-center border-2 border-solid border-[#005F6D] 
+                          bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785] 
+                          !w-20 !h-20 md:!w-24 md:!h-24 transition-all duration-500 
+                          rounded-full !top-2/4 !-translate-y-8 !right-5 shadow-lg hover:shadow-2xl transform hover:scale-110"
+                    data-carousel-next="" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-83b612d6f76c1ac4">
+
+                    <svg class="h-8 w-8 md:h-10 md:w-10 text-white transition-transform duration-500 group-hover:translate-x-1" 
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
+                        <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" 
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+              -->
           </div>
+
+
+
           <!-- <div class="swiper-pagination mt-6"></div>-->
         </div>
     </div>

@@ -79,37 +79,45 @@ import Footer from "../components/footer.astro";
 				<Footer />
 			</div>
 		</main>
-		<script is:inline type="module">
-			// Seleccionamos todos los elementos que queremos animar
-			const elementos = document.querySelectorAll('.animate__animated');
-
-			// Creamos el observador
-			const observer = new IntersectionObserver((entries, observer) => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting) 
-					{
-						const animacion = entry.target.dataset.animation;
-      
-						// Quitamos la animación si ya la tenía (para reiniciarla)
-      					//entry.target.classList.remove(animacion);
-
-						// Forzamos un reflow para que el navegador "olvide" la animación
-      					//void entry.target.offsetWidth;
-
-						// Lo agregamos como clase
-						entry.target.classList.add(animacion);
-						
-						// Evitamos que se vuelva a animar (Si se desea volver a animar se debe de comentar)
-						observer.unobserve(entry.target);
-
-					}
-				});
-				}, {
-				threshold: 0.2 // Se activa cuando el 20% del elemento es visible
-			});
-
-			// Observamos cada elemento
-			elementos.forEach(el => observer.observe(el));
-		</script>
 	</body>
+	<script 
+		id="ze-snippet" 
+		src="https://static.zdassets.com/ekr/snippet.js?key=7b269350-8509-4783-ac6c-ceb557244ecd" 
+		async 
+		defer
+		is:inline
+		>
+	</script>
+	<script is:inline type="module">
+		// Seleccionamos todos los elementos que queremos animar
+		const elementos = document.querySelectorAll('.animate__animated');
+
+		// Creamos el observador
+		const observer = new IntersectionObserver((entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) 
+				{
+					const animacion = entry.target.dataset.animation;
+	
+					// Quitamos la animación si ya la tenía (para reiniciarla)
+					//entry.target.classList.remove(animacion);
+
+					// Forzamos un reflow para que el navegador "olvide" la animación
+					//void entry.target.offsetWidth;
+
+					// Lo agregamos como clase
+					entry.target.classList.add(animacion);
+					
+					// Evitamos que se vuelva a animar (Si se desea volver a animar se debe de comentar)
+					observer.unobserve(entry.target);
+
+				}
+			});
+			}, {
+			threshold: 0.2 // Se activa cuando el 20% del elemento es visible
+		});
+
+		// Observamos cada elemento
+		elementos.forEach(el => observer.observe(el));
+	</script>
 </html>

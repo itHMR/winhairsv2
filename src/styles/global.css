@@ -75,6 +75,19 @@
   transition: transform 0.3s ease; /* suave */
 }
 
+@media only screen and (max-width: 1279px) {
+    .accordion:after {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .accordion:after {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .accordion:after {
         font-size: 12px;
@@ -96,4 +109,10 @@ input[type="checkbox"]:checked {
 
 form input.error, form textarea.error {
   border: 3px solid #bb2929!important;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none; 
 }

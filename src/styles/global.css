@@ -116,3 +116,1011 @@ input[type="number"]::-webkit-inner-spin-button {
     appearance: none;
     -webkit-appearance: none; 
 }
+
+@media (min-width: 2304px) {
+  #header a {
+    font-size: 20px;
+  }
+
+  #header .button-header {
+    padding: 16px 24px;
+  }
+
+  #home a, #home span, footer a {
+    font-size: 24px;
+  }
+
+  #info h2 {
+    font-size: 72px;
+  }
+
+  #info p {
+    font-size: 20px;
+  }
+
+  #info a {
+    font-size: 20px;
+    padding: 16px 28px;
+  }
+
+  #price svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  #price svg + span {
+    font-size: 24px;
+  }
+
+  #price svg + .flex > span {
+    font-size: 24px;
+  }
+
+  #price svg + .flex > small {
+    font-size: 20px;
+  }
+
+  #price .flex-wrap + span {
+    padding: 12px 8px;
+  }
+
+  #price a {
+    font-size: 24px;
+  }
+
+  #techniques h2 {
+    font-size: 72px;
+  }
+
+  #techniques p {
+    font-size: 24px;
+  }
+
+  #questions h2 {
+    font-size: 72px;
+  }
+
+  #questions button {
+    font-size: 30px;
+  }
+
+  #questions p {
+    font-size: 20px;
+  }
+
+  #aboutUs h2 {
+    font-size: 60px;
+  }
+
+  #aboutUs p {
+    font-size: 24px;
+  }
+
+  #aboutUs p + .w-full {
+    height: 448px;
+  }
+
+  .swal2-popup h2 {
+    font-size: 48px;
+  }
+
+  .swal2-html-container {
+    font-size: 24px;
+  }
+
+  .swal2-popup button {
+    font-size: 20px;
+  }
+
+  div:where(.swal2-container) div:where(.swal2-popup) {
+    width: 40em!important;
+  }
+}
+
+@media (min-width: 2560px) { 
+  #header {
+    padding: 48px;
+  }
+
+  #header a {
+    font-size: 30px;
+  }
+
+  #header .button-header {
+    padding: 26px 34px;
+  }
+
+  #logo1 img {
+    max-height: 100px;
+  }
+
+  #home a, #home span, footer a {
+    font-size: 36px;
+  }
+
+  a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] {
+    height: 96px;
+    width: 96px;
+  }
+
+  a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] svg {
+    height: 48px;
+    width: 48px;
+  }
+  
+  #info .max-w-2xl {
+    max-width: 54em;
+  }
+
+  #info h2 {
+    font-size: 82px;
+  }
+
+  #info p {
+    font-size: 30px;
+  }
+
+  #info a {
+    font-size: 30px;
+    padding: 26px 38px;
+  }
+
+  #results {
+    padding: 95px 144px;
+  }
+
+  #results h2 {
+    font-size: 96px;
+  }
+
+  #reviews h2 {
+    font-size: 84px;
+  }
+
+  #reviews h3 {
+    font-size: 48px;
+  }
+
+  .epJwge {
+    width: 80px!important;
+    height: 80px!important;
+  }
+
+  .cUDhDP {
+    gap: 52px!important;
+  }
+
+  .hIwXqu {
+    margin-left: 92px!important;
+  }
+
+  .yLFdA {
+    font-size: 30px!important;
+    line-height: 38px!important;
+  }
+
+  .drllrs {
+    font-size: 24px!important;
+  }
+
+  .jqQozN {
+    width: 24px!important;
+    height: 24px!important;
+  }
+
+  .wWwBE {
+    font-size: 24px!important;
+    line-height: 34px!important;
+  }
+
+  #price svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  #price svg + span {
+    font-size: 30px;
+  }
+
+  #price svg + .flex > span {
+    font-size: 30px;
+  }
+
+  #price svg + .flex > small {
+    font-size: 24px;
+  }
+
+  #price .flex-wrap + span {
+    padding: 16px 12px;
+    font-size: 48px;
+  }
+
+  #price .max-w-lg {
+    max-width: 896px; 
+  }
+
+  #price h3 {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+
+  #price span.text-6xl {
+    font-size: 160px;
+  }
+
+  #price span.text-3xl {
+    font-size: 60px;
+  }
+
+  #price a {
+    font-size: 30px;
+  }
+
+  #techniques h2 {
+    font-size: 82px;
+  }
+
+  #techniques p {
+    font-size: 30px;
+  }
+
+  #questions h2 {
+    font-size: 96px;
+  }
+
+  #questions button {
+    font-size: 42px;
+    padding: 32px 0;
+  }
+  
+  .accordion:after {
+    font-size: 26px;
+  }
+
+  #questions button + div {
+    line-height: 32px;
+  }
+
+  #questions p {
+    font-size: 30px;
+  }
+
+  #aboutUs h2 {
+    font-size: 72px;
+  }
+
+  #aboutUs p {
+    font-size: 30px;
+  }
+
+  #aboutUs p + .w-full {
+    height: 512px;
+  }
+
+  .swal2-popup h2 {
+    font-size: 48px;
+  }
+
+  .swal2-html-container {
+    font-size: 24px;
+  }
+
+  .swal2-popup button {
+    font-size: 20px;
+  }
+
+  div:where(.swal2-container) div:where(.swal2-popup) {
+    width: 40em!important;
+  }
+}
+
+@media (min-width: 2816px) { 
+  #header {
+    padding: 48px;
+  }
+
+  #header a {
+    font-size: 30px;
+  }
+
+  #header .button-header {
+    padding: 26px 34px;
+  }
+
+  #logo1 img {
+    max-height: 100px;
+  }
+
+  #home a, #home span, footer a {
+    font-size: 36px;
+  }
+
+  a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] {
+    height: 96px;
+    width: 96px;
+  }
+
+  a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] svg {
+    height: 48px;
+    width: 48px;
+  }
+  
+  #info .max-w-2xl {
+    max-width: 59em;
+  }
+
+  #info h2 {
+    font-size: 92px;
+  }
+
+  #info p {
+    font-size: 36px;
+  }
+
+  #info a {
+    font-size: 30px;
+    padding: 26px 38px;
+    border-width: 2px;
+  }
+
+  #results {
+    padding: 95px 144px;
+  }
+
+  #results h2 {
+    font-size: 96px;
+  }
+
+  #reviews h2 {
+    font-size: 96px;
+  }
+
+  #reviews h3 {
+    font-size: 60px;
+  }
+
+  .epJwge {
+    width: 100px!important;
+    height: 100px!important;
+  }
+
+  .cUDhDP {
+    gap: 76px!important;
+  }
+
+  .hIwXqu {
+    margin-left: 116px!important;
+  }
+
+  .yLFdA {
+    font-size: 36px!important;
+    line-height: 42px!important;
+  }
+
+  .drllrs {
+    font-size: 30px!important;
+  }
+
+  .jqQozN {
+    width: 28px!important;
+    height: 38px!important;
+  }
+
+  .csZRus {
+    height: 38px!important;
+  }
+
+  .cmmAHf {
+    max-width: 1080px!important;
+    min-height: 520px!important;
+  }
+
+  .ftHnib {
+    font-size: 36px!important;
+  }
+
+  .hYbQTt {
+    line-height: 46px!important;
+  }
+
+  .wWwBE {
+    font-size: 30px!important;
+    line-height: 40px!important;
+  }
+
+  #price svg {
+    width: 58px;
+    height: 58px;
+  }
+
+  #price svg + span {
+    font-size: 48px;
+  }
+
+  #price svg + .flex > span {
+    font-size: 48px;
+  }
+
+  #price svg + .flex > small {
+    font-size: 36px;
+  }
+
+  #price li {
+    margin-bottom: 12px;
+  }
+
+  #price .flex-wrap + span {
+    padding: 20px 16px;
+    font-size: 60px;
+  }
+
+  #price .max-w-lg {
+    max-width: 1024px; 
+  }
+
+  #price h3 {
+    font-size: 72px;
+    margin-bottom: 28px;
+  }
+
+  #price h3 + div {
+    margin-bottom: 32px;
+  }
+
+  #price span.text-6xl {
+    font-size: 192px;
+  }
+
+  #price span.text-3xl {
+    font-size: 72px;
+  }
+
+  #price a {
+    font-size: 48px;
+    padding: 24px 40px;
+  }
+
+  #techniques h2 {
+    font-size: 92px;
+  }
+
+  #techniques p {
+    font-size: 36px;
+  }
+
+  #questions h2 {
+    font-size: 106px;
+  }
+
+  #questions button {
+    font-size: 60px;
+    padding: 32px 0;
+  }
+
+  #questions .border-b {
+    border-width: 2px;
+  }
+  
+  .accordion:after {
+    font-size: 36px;
+  }
+
+  #questions button + div {
+    line-height: 50px;
+  }
+
+  #questions p {
+    font-size: 48px;
+    padding-bottom: 48px;
+  }
+
+  #aboutUs h2 {
+    font-size: 96px;
+  }
+
+  #aboutUs p {
+    font-size: 48px;
+  }
+
+  #aboutUs p + .w-full {
+    height: 612px;
+  }
+
+  .swal2-popup h2 {
+    font-size: 48px;
+  }
+
+  .swal2-html-container {
+    font-size: 24px;
+  }
+
+  .swal2-popup button {
+    font-size: 20px;
+  }
+
+  div:where(.swal2-container) div:where(.swal2-popup) {
+    width: 40em!important;
+  }
+}
+
+@media (min-width: 3072px) { 
+  #header {
+    padding: 56px;
+  }
+
+  #header a {
+    font-size: 36px;
+  }
+
+  #header .button-header {
+    padding: 32px 40px;
+  }
+
+  #logo1 img {
+    max-height: 100px;
+  }
+
+  #home a, #home span, footer a {
+    font-size: 48px;
+  }
+
+  a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] {
+    height: 128px;
+    width: 128px;
+  }
+
+  a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] svg {
+    height: 72px;
+    width: 72px;
+  }
+  
+  #info .max-w-2xl {
+    max-width: 64em;
+  }
+
+  #info h2 {
+    font-size: 102px;
+  }
+
+  #info p {
+    font-size: 42px;
+  }
+
+  #info a {
+    font-size: 42px;
+    padding: 26px 38px;
+    border-width: 2px;
+  }
+
+  #results {
+    padding: 95px 144px;
+  }
+
+  #results h2 {
+    font-size: 106px;
+  }
+
+  #reviews h2 {
+    font-size: 106px;
+  }
+
+  #reviews h3 {
+    font-size: 72px;
+  }
+
+  .EmbedRoot__Root-sc-319cb1a5-0 {
+    max-width: 2200px!important;
+  }
+
+  .epJwge {
+    width: 120px!important;
+    height: 120px!important;
+  }
+
+  .cUDhDP {
+    gap: 96px!important;
+  }
+
+  .hIwXqu {
+    margin-left: 136px!important;
+  }
+
+  .yLFdA {
+    font-size: 48px!important;
+    line-height: 54px!important;
+  }
+
+  .drllrs {
+    font-size: 36px!important;
+  }
+
+  .jqQozN {
+    width: 34px!important;
+    height: 44px!important;
+  }
+
+  .csZRus {
+    height: 50px!important;
+  }
+
+  .cmmAHf {
+    max-width: 1180px!important;
+    min-height: 620px!important;
+  }
+
+  .ftHnib {
+    font-size: 48px!important;
+  }
+
+  .hYbQTt {
+    line-height: 58px!important;
+  }
+
+  .wWwBE {
+    font-size: 36px!important;
+    line-height: 50px!important;
+  }
+
+  .csZRus {
+    line-height: 54px!important;
+  }
+
+  #price svg {
+    width: 58px;
+    height: 58px;
+  }
+
+  #price svg + span {
+    font-size: 48px;
+  }
+
+  #price svg + .flex > span {
+    font-size: 48px;
+  }
+
+  #price svg + .flex > small {
+    font-size: 36px;
+  }
+
+  #price li {
+    margin-bottom: 12px;
+  }
+
+  #price .flex-wrap + span {
+    padding: 20px 16px;
+    font-size: 60px;
+  }
+
+  #price .max-w-lg {
+    max-width: 1024px; 
+  }
+
+  #price h3 {
+    font-size: 72px;
+    margin-bottom: 28px;
+  }
+
+  #price h3 + div {
+    margin-bottom: 32px;
+  }
+
+  #price span.text-6xl {
+    font-size: 192px;
+  }
+
+  #price span.text-3xl {
+    font-size: 72px;
+  }
+
+  #price a {
+    font-size: 48px;
+    padding: 24px 40px;
+  }
+
+  #techniques h2 {
+    font-size: 92px;
+  }
+
+  #techniques p {
+    font-size: 36px;
+  }
+
+  #questions h2 {
+    font-size: 106px;
+  }
+
+  #questions button {
+    font-size: 60px;
+    padding: 32px 0;
+  }
+
+  #questions .border-b {
+    border-width: 2px;
+  }
+  
+  .accordion:after {
+    font-size: 36px;
+  }
+
+  #questions button + div {
+    line-height: 50px;
+  }
+
+  #questions p {
+    font-size: 48px;
+    padding-bottom: 48px;
+  }
+
+  #aboutUs h2 {
+    font-size: 96px;
+  }
+
+  #aboutUs p {
+    font-size: 48px;
+  }
+
+  #aboutUs p + .w-full {
+    height: 612px;
+  }
+
+  .swal2-popup h2 {
+    font-size: 48px;
+  }
+
+  .swal2-html-container {
+    font-size: 24px;
+  }
+
+  .swal2-popup button {
+    font-size: 20px;
+  }
+
+  div:where(.swal2-container) div:where(.swal2-popup) {
+    width: 40em!important;
+  }
+}
+
+@media (min-width: 3328px) { 
+  #header {
+    padding: 56px;
+  }
+
+  #header a {
+    font-size: 36px;
+  }
+
+  #header .button-header {
+    padding: 32px 40px;
+  }
+
+  #logo1 img {
+    max-height: 100px;
+  }
+
+  #home a, #home span, footer a {
+    font-size: 48px;
+  }
+
+  a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] {
+    height: 128px;
+    width: 128px;
+  }
+
+  a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] svg {
+    height: 72px;
+    width: 72px;
+  }
+  
+  #info .max-w-2xl {
+    max-width: 70em;
+  }
+
+  #info h2 {
+    font-size: 112px;
+  }
+
+  #info p {
+    font-size: 48px;
+  }
+
+  #info a {
+    font-size: 48px;
+    padding: 32px 44px;
+    border-width: 2px;
+  }
+
+  #results {
+    padding: 95px 144px;
+  }
+
+  #results h2 {
+    font-size: 106px;
+  }
+
+  #reviews h2 {
+    font-size: 106px;
+  }
+
+  #reviews h3 {
+    font-size: 72px;
+  }
+
+  .EmbedRoot__Root-sc-319cb1a5-0 {
+    max-width: 2200px!important;
+  }
+
+  .epJwge {
+    width: 120px!important;
+    height: 120px!important;
+  }
+
+  .cUDhDP {
+    gap: 96px!important;
+  }
+
+  .hIwXqu {
+    margin-left: 136px!important;
+  }
+
+  .yLFdA {
+    font-size: 48px!important;
+    line-height: 54px!important;
+  }
+
+  .drllrs {
+    font-size: 36px!important;
+  }
+
+  .jqQozN {
+    width: 34px!important;
+    height: 44px!important;
+  }
+
+  .csZRus {
+    height: 50px!important;
+  }
+
+  .cmmAHf {
+    max-width: 1180px!important;
+    min-height: 620px!important;
+  }
+
+  .ftHnib {
+    font-size: 48px!important;
+  }
+
+  .hYbQTt {
+    line-height: 58px!important;
+  }
+
+  .wWwBE {
+    font-size: 36px!important;
+    line-height: 50px!important;
+  }
+
+  .csZRus {
+    line-height: 54px!important;
+  }
+
+  #price {
+    padding: 56px 160px;
+  }
+
+  #price .rounded-2xl {
+    padding: 56px;
+  }
+
+  #price svg {
+    width: 62px;
+    height: 62px;
+  }
+
+  #price svg + span {
+    font-size: 52px;
+  }
+
+  #price svg + .flex > span {
+    font-size: 52px;
+  }
+
+  #price svg + .flex > small {
+    font-size: 40px;
+  }
+
+  #price li {
+    margin-bottom: 12px;
+  }
+
+  #price .flex-wrap + span {
+    padding: 24px 20px;
+    font-size: 72px;
+  }
+
+  #price .max-w-lg {
+    max-width: 1152px; 
+  }
+
+  #price h3 {
+    font-size: 82px;
+    margin-bottom: 28px;
+  }
+
+  #price h3 + div {
+    margin-bottom: 32px;
+  }
+
+  #price span.text-6xl {
+    font-size: 224px;
+  }
+
+  #price span.text-3xl {
+    font-size: 82px;
+  }
+
+  #price a {
+    font-size: 60px;
+    padding: 24px 40px;
+  }
+
+  #techniques h2 {
+    font-size: 102px;
+  }
+
+  #techniques p {
+    font-size: 48px;
+  }
+
+  #questions h2 {
+    font-size: 106px;
+  }
+
+  #questions button {
+    font-size: 60px;
+    padding: 32px 0;
+  }
+
+  #questions .border-b {
+    border-width: 2px;
+  }
+  
+  .accordion:after {
+    font-size: 36px;
+  }
+
+  #questions button + div {
+    line-height: 50px;
+  }
+
+  #questions p {
+    font-size: 48px;
+    padding-bottom: 48px;
+  }
+
+  #aboutUs h2 {
+    font-size: 96px;
+  }
+
+  #aboutUs p {
+    font-size: 48px;
+  }
+
+  #aboutUs p + .w-full {
+    height: 612px;
+  }
+
+  .swal2-popup h2 {
+    font-size: 48px;
+  }
+
+  .swal2-html-container {
+    font-size: 24px;
+  }
+
+  .swal2-popup button {
+    font-size: 20px;
+  }
+
+  div:where(.swal2-container) div:where(.swal2-popup) {
+    width: 40em!important;
+  }
+}

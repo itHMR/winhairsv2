@@ -75,6 +75,10 @@
   transition: transform 0.3s ease; /* suave */
 }
 
+#questionnaire-container {
+  max-width: 896px;
+}
+
 @media only screen and (max-width: 1279px) {
     .accordion:after {
         margin-top: 0;
@@ -214,6 +218,15 @@ input[type="number"]::-webkit-inner-spin-button {
 
   div:where(.swal2-container) div:where(.swal2-popup) {
     width: 40em!important;
+  }
+
+  .final h3 {
+    font-size: 60px;
+  }
+
+  .final {
+    margin-top: 56px;
+    margin-bottom: 56px;
   }
 }
 
@@ -640,6 +653,17 @@ input[type="number"]::-webkit-inner-spin-button {
 
   div:where(.swal2-container) div:where(.swal2-popup) {
     width: 40em!important;
+  }
+
+  .final h2 {
+    font-size: 54px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
+  .final {
+    margin-top: 56px;
+    margin-bottom: 56px;
   }
 }
 
@@ -1122,5 +1146,20 @@ input[type="number"]::-webkit-inner-spin-button {
 
   div:where(.swal2-container) div:where(.swal2-popup) {
     width: 40em!important;
+  }
+
+  #questionnaire-container {
+    max-width: 1640px;
+  }
+
+  .final h2 {
+    font-size: 72px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+  }
+
+  .final {
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }

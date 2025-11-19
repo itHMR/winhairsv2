@@ -1,0 +1,302 @@
+---
+import Logo from "../components/logo.astro";
+import Logo2 from "../components/logo2.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Winhair - Hair transplant Clinic</title>
+		<meta name="description" content="Discover Winhair’s Hair Loss Permanent and Safe Solution. We're specializing in hair loss, hair restoration and hair transplantation. Don't waste your time traveling to India or Turkey, our amazing results with neograft hair transplant are here.">
+
+		<!-- Autor -->
+		<meta name="author" content="David Díaz">
+
+		<!-- SEO para Google -->
+		<link rel="canonical" href="https://winhairtj.com/">
+
+		<!-- Redes Sociales (Open Graph) -->
+		<meta property="og:title" content="Winhair - Hair transplant Clinic">
+		<meta property="og:description" content="Discover Winhair’s Hair Loss Permanent and Safe Solution. We're specializing in hair loss, hair restoration and hair transplantation. Don't waste your time traveling to India or Turkey, our amazing results with neograft hair transplant are here.">
+		<meta property="og:image" content="https://winhairs.com/winhair-logo.webp">
+		<meta property="og:url" content="https://winhairs.com">
+		<meta property="og:type" content="website">
+		
+		<!-- Icon Font Stylesheet -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+		<!-- Google Web Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<!-- Google Web Fonts -->
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400,500,700&amp;lang=es">
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=es">
+		
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KNGPVH6M');</script>
+		<!-- End Google Tag Manager -->
+	</head>
+	<body>
+		<header id="header" class="bg-[#91C1C1] z-60 fixed top-0 w-full py-6 sm:py-8 px-4 sm:px-8 transition-colors duration-400">
+            <div class="flex flex-wrap justify-between items-center">
+                <!-- relative block aspect-[370/66] h-[44px] sm:h-[50px] lg:h-[56px] xl:h-[66px] -->
+                <a href="/" class="relative block aspect-[370/66] h-[44px] xl:h-[66px]">
+                    <Logo id="logo1" class="absolute inset-0 transition-all duration-400 opacity-100 scale-100" />
+                    <Logo2 id="logo2" class="absolute inset-0 transition-all duration-400 opacity-0 scale-90" />
+                </a>
+
+                <div class="flex items-center lg:order-2">
+                    <!-- Menú de escritorio -->
+                    <div class="hidden md:flex items-center lg:order-2 space-x-4">
+                        <a class="px-2 text-white hover:text-[#376374] duration-300" href="https://www.instagram.com/winhairtj" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="px-2 text-white hover:text-[#376374] duration-300" href="https://www.facebook.com/winhairtj" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://winhairtj.com/#aboutUs" class="button-header ml-4 font-[Poppins] py-3 px-5 text-sm bg-[#376374] text-white rounded-lg cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-[#547785]">
+                            Book an appointment
+                        </a>
+                    </div>
+                    <button id="btnHeader" data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 mt-2 sm:mt-0" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div class="lg:hidden justify-between items-center w-full flex order-1 hidden" id="mobilemenu2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 w-full">
+                        <li>
+                            <a href="https://winhairtj.com" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#info" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">About us</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#results" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">Results</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#price" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">Price</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#techniques" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">Techniques</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#questions" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">Questions</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#aboutUs" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+		<main class="relative scroll-smooth">
+			<section data-header-color="#91C1C1" data-header-logo="1" class="bg-[#4E7881] text-left relative px-6 py-8 md:px-12 lg:px-14 xl:px-52 md:py-14 xl:py-24">
+
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-24 mb-2 text-left text-white">
+                    PRIVACY POLICY – WINHAIR
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    WINHAIR (“we,” “us,” or “our”) respects your privacy and is committed to protecting your personal information.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    This Privacy Policy describes how we collect, use, and safeguard your data in compliance with the <strong class="font-semibold">California Consumer Privacy Act (CCPA)</strong> and applicable U.S. federal regulations.
+                </p>
+
+                <!-- 1. Information We Collect -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    1. Information We Collect
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    We may collect the following types of information:
+                </p>
+                <ul class="list-disc list-inside">
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white"><strong class="font-semibold">Personal Information:</strong> Name, email, phone number, age, location, and other contact details.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white"><strong class="font-semibold">Health-related Information:</strong> Any medical history or images voluntarily submitted for consultation or evaluation.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white"><strong class="font-semibold">Technical Data:</strong> IP address, browser type, device information, and website usage statistics collected through cookies or analytics tools.</li>
+                </ul>
+
+                <!-- 2. How We Use Your Information -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    2. How We Use Your Information
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Your data is collected and processed for the following purposes:
+                </p>
+                <ul class="list-disc list-inside">
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">To provide and manage consultations or service requests.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">To communicate regarding appointments, follow-ups, or inquiries.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">To improve user experience, website functionality, and service quality.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">To comply with legal obligations and prevent misuse or fraud.</li>
+                </ul>
+
+                <!-- 3. Legal Basis for Processing -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    3. Legal Basis for Processing
+                </h2>
+                <ul class="list-disc list-inside">
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">Your <strong class="font-semibold">consent,</strong> when you voluntarily submit information.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">The <strong class="font-semibold">performance of a service,</strong> when you engage with us for consultations.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">Our <strong class="font-semibold">legitimate interests,</strong> such as maintaining website security and quality improvement.</li>
+                </ul>
+
+                <!-- 4. Data Sharing and Disclosure -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    4. Data Sharing and Disclosure
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    We do <strong class="font-semibold">not sell or rent</strong> your personal information.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Data may only be shared with:
+                </p>
+                <ul class="list-disc list-inside">
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">Authorized WINHAIR personnel or medical professionals involved in your care.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">Trusted service providers who assist in operating our systems, bound by confidentiality agreements.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">Regulatory or law enforcement authorities, if legally required.</li>
+                </ul>
+
+                <!-- 5. Data Retention -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    5. Data Retention
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    We retain personal data only as long as necessary to fulfill the purposes outlined here or as required by law.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    You may request deletion of your information at any time (see Section 8).
+                </p>
+
+                <!-- 6. Cookies and Tracking Technologies -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    6. Cookies and Tracking Technologies
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    We use cookies to enhance navigation and analyze website usage.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    You can disable cookies in your browser settings; however, some features may not function properly.
+                </p>
+
+                <!-- 7. Data Security -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    7. Data Security
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    We implement physical, technical, and administrative safeguards to protect your data against unauthorized access, alteration, or disclosure.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Despite our efforts, no system is completely secure, and transmission over the internet is done at your own risk.
+                </p>
+
+                <!-- 8. Your Privacy Rights -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    8. Your Privacy Rights (CCPA & GDPR Equivalent)
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    You may exercise the following rights:
+                </p>
+                <ul class="list-disc list-inside">
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white"><strong class="font-semibold">Access:</strong> Request a copy of the data we hold about you.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white"><strong class="font-semibold">Correction:</strong> Request rectification of inaccurate information.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white"><strong class="font-semibold">Deletion:</strong> Ask us to delete your personal information.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white"><strong class="font-semibold">Opt-out:</strong> Withdraw consent or object to data processing.</li>
+                </ul>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Requests can be submitted via email at <strong class="font-semibold"><a href="mailto:info@winhairtj.com" target="_self" data-type="url">info@winhairtj.com</a></strong>.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    We will respond within 30 days of verification of your identity.
+                </p>
+
+                <!-- 9. Minors -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    9. Minors
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Our services are intended for adults (18+).
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    We do not knowingly collect personal data from minors. If we become aware of such collection, we will promptly delete the data.
+                </p>
+
+                <!-- 10. International Users -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    10. International Users
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    If you access our site from outside the United States, you acknowledge and agree that your information may be transferred to and processed in the U.S.
+                </p>
+
+                <!-- 11. Updates -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    11. Updates to This Policy
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    We may update this Privacy Policy periodically.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Any modifications will be posted on this page with an updated “Last Updated” date.
+                </p>
+
+                <!-- 12. Contact Info -->
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">
+                    12. Contact Information
+                </h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    If you have questions or concerns about our Privacy Policy or data handling, please contact us at:
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    <strong class="font-semibold"><a href="mailto:info@winhairtj.com" target="_self" data-type="url">info@winhairtj.com</a></strong>
+                </p>
+            </section>
+		</main>
+	</body>
+	<!-- Start of winhair Zendesk Widget script -->
+	<script 
+		id="ze-snippet" 
+		src="https://static.zdassets.com/ekr/snippet.js?key=3f85e318-a4f6-4ecc-9fcb-d561be991d6e"
+		async 
+		defer
+		is:inline
+		> 
+	</script>
+	<!-- End of winhair Zendesk Widget script -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNGPVH6M"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+     <script>
+        const header = document.querySelector("#header");
+        const logo1 = document.querySelector("#logo1");
+        const logo2 = document.querySelector("#logo2");
+        const btn = document.getElementById("btnHeader");
+        const headermobile = document.getElementById("mobilemenu2");
+
+        // 👉 Toggle menú móvil
+        btn.addEventListener("click", () => {
+            headermobile.classList.toggle("hidden");
+            header.classList.toggle("menu-bg");
+            header.classList.toggle("shadow-md");
+        });
+
+        // 👉 Cerrar menú al hacer click en un link
+        const menuLinks = headermobile.querySelectorAll("a");
+        menuLinks.forEach(link => {
+            link.addEventListener("click", () => {
+            headermobile.classList.add("hidden");
+            header.classList.remove("menu-bg");
+            });
+        });
+     </script>
+</html>

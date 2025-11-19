@@ -1,0 +1,224 @@
+---
+import Logo from "../components/logo.astro";
+import Logo2 from "../components/logo2.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Winhair - Hair transplant Clinic</title>
+		<meta name="description" content="Discover Winhair’s Hair Loss Permanent and Safe Solution. We're specializing in hair loss, hair restoration and hair transplantation. Don't waste your time traveling to India or Turkey, our amazing results with neograft hair transplant are here.">
+
+		<!-- Autor -->
+		<meta name="author" content="David Díaz">
+
+		<!-- SEO para Google -->
+		<link rel="canonical" href="https://winhairtj.com/">
+
+		<!-- Redes Sociales (Open Graph) -->
+		<meta property="og:title" content="Winhair - Hair transplant Clinic">
+		<meta property="og:description" content="Discover Winhair’s Hair Loss Permanent and Safe Solution. We're specializing in hair loss, hair restoration and hair transplantation. Don't waste your time traveling to India or Turkey, our amazing results with neograft hair transplant are here.">
+		<meta property="og:image" content="https://winhairs.com/winhair-logo.webp">
+		<meta property="og:url" content="https://winhairs.com">
+		<meta property="og:type" content="website">
+		
+		<!-- Icon Font Stylesheet -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+		<!-- Google Web Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<!-- Google Web Fonts -->
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400,500,700&amp;lang=es">
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=es">
+		
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KNGPVH6M');</script>
+		<!-- End Google Tag Manager -->
+	</head>
+	<body>
+		<header id="header" class="bg-[#91C1C1] z-60 fixed top-0 w-full py-6 sm:py-8 px-4 sm:px-8 transition-colors duration-400">
+            <div class="flex flex-wrap justify-between items-center">
+                <!-- relative block aspect-[370/66] h-[44px] sm:h-[50px] lg:h-[56px] xl:h-[66px] -->
+                <a href="/" class="relative block aspect-[370/66] h-[44px] xl:h-[66px]">
+                    <Logo id="logo1" class="absolute inset-0 transition-all duration-400 opacity-100 scale-100" />
+                    <Logo2 id="logo2" class="absolute inset-0 transition-all duration-400 opacity-0 scale-90" />
+                </a>
+
+                <div class="flex items-center lg:order-2">
+                    <!-- Menú de escritorio -->
+                    <div class="hidden md:flex items-center lg:order-2 space-x-4">
+                        <a class="px-2 text-white hover:text-[#376374] duration-300" href="https://www.instagram.com/winhairtj" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="px-2 text-white hover:text-[#376374] duration-300" href="https://www.facebook.com/winhairtj" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://winhairtj.com/#aboutUs" class="button-header ml-4 font-[Poppins] py-3 px-5 text-sm bg-[#376374] text-white rounded-lg cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-[#547785]">
+                            Book an appointment
+                        </a>
+                    </div>
+                    <button id="btnHeader" data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 mt-2 sm:mt-0" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div class="lg:hidden justify-between items-center w-full flex order-1 hidden" id="mobilemenu2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 w-full">
+                        <li>
+                            <a href="https://winhairtj.com" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#info" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">About us</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#results" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">Results</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#price" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">Price</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#techniques" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">Techniques</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#questions" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">Questions</a>
+                        </li>
+                        <li>
+                            <a href="https://winhairtj.com/#aboutUs" class="block py-4 pr-4 pl-3 text-white border-b border-gray-100 lg:border-0 lg:p-0">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+		<main class="relative scroll-smooth">
+			<section data-header-color="#91C1C1" data-header-logo="1" class="bg-[#4E7881] text-left relative px-6 py-8 md:px-12 lg:px-14 xl:px-52 md:py-14 xl:py-24">
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-24 mb-2 text-left text-white">TERMS OF SERVICE – WINHAIR</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Welcome to WINHAIR.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    These Terms of Service (“Terms”) govern your access to and use of our website and any associated digital platforms (collectively, the “Services”).
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    By accessing or using our Services, you agree to these Terms and to our Privacy Policy. If you do not agree, please discontinue use immediately.
+                </p>
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">1. About WINHAIR</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    WINHAIR provides educational content, virtual consultations, and general information related to hair restoration and wellness.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Welcome to WINHAIR.All material on this site is for informational purposes only and is <strong class="font-semibold">not intended to replace professional medical advice, diagnosis, or treatment.</strong>
+                </p>
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">2. Eligibility</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    You must be at least 18 years old to use our Services.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    By using this website, you represent that you meet this requirement and that all information you provide is accurate and complete.
+                </p>
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">3. Medical Disclaimer</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    While WINHAIR may connect you with licensed specialists or provide insights into treatment options, the content available on this website should <strong class="font-semibold">not be interpreted as a definitive medical opinion.</strong>
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Always seek the advice of your physician or qualified healthcare provider regarding any medical condition or treatment.
+                </p>
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">4. User Conduct</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    You agree not to:
+                </p>
+                <ul class="list-disc list-inside">
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">Misuse or interfere with the normal functioning of the website.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">Upload or transmit any content that is harmful, defamatory, or violates any law.</li>
+                    <li data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">Attempt to access private areas of the system without authorization.</li>
+                </ul>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Violation of these conditions may result in termination of access and potential legal action.
+                </p>
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">5. Intellectual Property</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    All trademarks, logos, images, and written materials on this site are the intellectual property of WINHAIR or its licensors.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    You may not copy, reproduce, modify, or distribute any material without prior written consent.
+                </p>
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">6. Third-Party Links</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Our website may include links to third-party resources for your convenience.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    WINHAIR does not endorse, control, or assume responsibility for any external content or policies.
+                </p>
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">7. Limitation of Liability</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    To the fullest extent permitted by law, WINHAIR, its affiliates, and representatives shall not be liable for any damages, losses, or injuries resulting from your use of the Services, reliance on information provided, or interactions with third parties.
+                </p>
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">8. No Guarantee of Results</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Individual results from any referenced hair restoration procedures or products may vary. WINHAIR does not guarantee any specific outcome or time frame.
+                </p>
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">9. Changes to These Terms</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    WINHAIR may modify these Terms at any time without prior notice. Updates will be posted on this page with the “Last Updated” date revised accordingly.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Continued use of the Services after changes constitutes acceptance of the new Terms.
+                </p>
+                <h2 data-animation="animate__pulse" class="animate__animated text-3xl md:text-4xl xl:text-5xl font-medium font-[Poppins] mt-4 mb-2 text-left text-white">10. Governing Law</h2>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    These Terms shall be governed by and construed in accordance with the laws of the <strong class="font-semibold">State of California</strong>, United States, without regard to its conflict of law provisions.
+                </p>
+                <p data-animation="animate__pulse" class="animate__animated text-lg md:text-xl xl:text-2xl font-light font-[Poppins] mb-6 text-left text-white">
+                    Any disputes shall be resolved exclusively in the courts located in <strong class="font-semibold">San Diego County, California</strong>.
+                </p>
+            </section>
+		</main>
+	</body>
+	<!-- Start of winhair Zendesk Widget script -->
+	<script 
+		id="ze-snippet" 
+		src="https://static.zdassets.com/ekr/snippet.js?key=3f85e318-a4f6-4ecc-9fcb-d561be991d6e"
+		async 
+		defer
+		is:inline
+		> 
+	</script>
+	<!-- End of winhair Zendesk Widget script -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNGPVH6M"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+     <script>
+        const header = document.querySelector("#header");
+        const logo1 = document.querySelector("#logo1");
+        const logo2 = document.querySelector("#logo2");
+        const btn = document.getElementById("btnHeader");
+        const headermobile = document.getElementById("mobilemenu2");
+
+        // 👉 Toggle menú móvil
+        btn.addEventListener("click", () => {
+            headermobile.classList.toggle("hidden");
+            header.classList.toggle("menu-bg");
+            header.classList.toggle("shadow-md");
+        });
+
+        // 👉 Cerrar menú al hacer click en un link
+        const menuLinks = headermobile.querySelectorAll("a");
+        menuLinks.forEach(link => {
+            link.addEventListener("click", () => {
+            headermobile.classList.add("hidden");
+            header.classList.remove("menu-bg");
+            });
+        });
+     </script>
+</html>

@@ -7,7 +7,11 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   //output: 'static', // 👈 MUY IMPORTANTE: le dice a Astro que genere archivos HTML estáticos
   site: 'https://winhairtj.com', // cambia por tu dominio real
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      entryLimit: 50000 // Desactiva división
+    })
+  ],
   vite: {
     plugins: [tailwindcss()]
   }

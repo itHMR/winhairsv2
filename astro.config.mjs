@@ -9,7 +9,8 @@ export default defineConfig({
   site: 'https://winhairtj.com', // cambia por tu dominio real
   integrations: [
     sitemap({
-      entryLimit: 50000 // Desactiva división
+      entryLimit: 50000,
+      filenameBase: 'sitemap'
     })
   ],
   vite: {

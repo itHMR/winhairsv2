@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# 1️⃣ Forzar HTTPS primero
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2️⃣ Forzar sin www
+RewriteCond %{HTTP_HOST} ^www\.winhairtj\.com$ [NC]
+RewriteRule ^(.*)$ https://winhairtj.com/$1 [L,R=301]
+
+<IfModule mod_rewrite.c>
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

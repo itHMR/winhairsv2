@@ -130,7 +130,7 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 16px 24px;
   }
 
-  #home a, #home span, footer a {
+  #home a, .home span, footer a {
     font-size: 24px;
   }
 
@@ -169,6 +169,31 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   #price a {
+    font-size: 24px;
+  }
+
+  .price svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .price svg + span {
+    font-size: 24px;
+  }
+
+  .price svg + .flex > span {
+    font-size: 24px;
+  }
+
+  .price svg + .flex > small {
+    font-size: 20px;
+  }
+
+  .price .flex-wrap + span, .price .offer {
+    padding: 12px 8px;
+  }
+
+  .price a {
     font-size: 24px;
   }
 
@@ -247,7 +272,7 @@ input[type="number"]::-webkit-inner-spin-button {
     max-height: 100px;
   }
 
-  #home a, #home span, footer a {
+  #home a, .home span, footer a {
     font-size: 36px;
   }
 
@@ -369,6 +394,56 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 30px;
   }
 
+  /* Card hero */
+
+  .price svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .price svg + span {
+    font-size: 30px;
+  }
+
+  .price svg + .flex > span {
+    font-size: 30px;
+  }
+
+  .price svg + .flex > small {
+    font-size: 24px;
+  }
+
+  .price .flex-wrap + span {
+    padding: 16px 12px;
+    font-size: 48px;
+  }
+
+  .price .offer {
+    padding: 16px 22px;
+    font-size: 38px;
+  }
+
+  .price .card {
+    max-width: 896px; 
+  }
+
+  .price h3 {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+
+  .price span.text-5xl {
+    font-size: 160px;
+  }
+
+  .price span.text-2xl {
+    font-size: 60px;
+  }
+
+  .price a {
+    font-size: 30px;
+  }
+
   #techniques h2 {
     font-size: 82px;
   }
@@ -444,7 +519,7 @@ input[type="number"]::-webkit-inner-spin-button {
     max-height: 100px;
   }
 
-  #home a, #home span, footer a {
+  #home a, .home span, footer a {
     font-size: 36px;
   }
 
@@ -593,6 +668,65 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 24px 40px;
   }
 
+  /* Card hero */
+
+  .price svg {
+    width: 58px;
+    height: 58px;
+  }
+
+  .price svg + span {
+    font-size: 48px;
+  }
+
+  .price svg + .flex > span {
+    font-size: 48px;
+  }
+
+  .price svg + .flex > small {
+    font-size: 36px;
+  }
+
+  .price li {
+    margin-bottom: 12px;
+  }
+
+  .price .flex-wrap + span {
+    padding: 20px 16px;
+    font-size: 60px;
+  }
+
+  .price .offer {
+    padding: 20px 26px;
+    font-size: 50px;
+  }
+
+  .price .card {
+    max-width: 1024px; 
+  }
+
+  .price h3 {
+    font-size: 72px;
+    margin-bottom: 28px;
+  }
+
+  .price h3 + div {
+    margin-bottom: 32px;
+  }
+
+  .price span.text-5xl {
+    font-size: 192px;
+  }
+
+  .price span.text-2xl {
+    font-size: 72px;
+  }
+
+  .price a {
+    font-size: 48px;
+    padding: 24px 40px;
+  }
+
   #techniques h2 {
     font-size: 92px;
   }
@@ -684,7 +818,7 @@ input[type="number"]::-webkit-inner-spin-button {
     max-height: 100px;
   }
 
-  #home a, #home span, footer a {
+  #home a, .home span, footer a {
     font-size: 48px;
   }
 
@@ -841,6 +975,65 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 24px 40px;
   }
 
+  /* Card hero */
+
+  .price svg {
+    width: 58px;
+    height: 58px;
+  }
+
+  .price svg + span {
+    font-size: 48px;
+  }
+
+  .price svg + .flex > span {
+    font-size: 48px;
+  }
+
+  .price svg + .flex > small {
+    font-size: 36px;
+  }
+
+  .price li {
+    margin-bottom: 12px;
+  }
+
+  .price .flex-wrap + span {
+    padding: 20px 16px;
+    font-size: 60px;
+  }
+
+  .price .offer {
+    padding: 20px 26px;
+    font-size: 50px;
+  }
+
+  .price .card {
+    max-width: 1024px; 
+  }
+
+  .price h3 {
+    font-size: 72px;
+    margin-bottom: 28px;
+  }
+
+  .price h3 + div {
+    margin-bottom: 32px;
+  }
+
+  .price span.text-5xl {
+    font-size: 192px;
+  }
+
+  .price span.text-2xl {
+    font-size: 72px;
+  }
+
+  .price a {
+    font-size: 48px;
+    padding: 24px 40px;
+  }
+
   #techniques h2 {
     font-size: 92px;
   }
@@ -921,7 +1114,7 @@ input[type="number"]::-webkit-inner-spin-button {
     max-height: 100px;
   }
 
-  #home a, #home span, footer a {
+  #home a, .home span, footer a {
     font-size: 48px;
   }
 
@@ -1082,6 +1275,73 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   #price a {
+    font-size: 60px;
+    padding: 24px 40px;
+  }
+
+  /* Card hero */
+
+  .price {
+    padding: 56px 160px;
+  }
+
+  .price .rounded-2xl {
+    padding: 56px;
+  }
+
+  .price svg {
+    width: 62px;
+    height: 62px;
+  }
+
+  .price svg + span {
+    font-size: 52px;
+  }
+
+  .price svg + .flex > span {
+    font-size: 52px;
+  }
+
+  .price svg + .flex > small {
+    font-size: 40px;
+  }
+
+  .price li {
+    margin-bottom: 12px;
+  }
+
+  .price .flex-wrap + span {
+    padding: 24px 20px;
+    font-size: 72px;
+  }
+
+  .price .offer {
+    padding: 24px 22px;
+    font-size: 54px;
+  }
+
+  .price .card {
+    max-width: 1152px; 
+  }
+
+  .price h3 {
+    font-size: 82px;
+    margin-bottom: 28px;
+  }
+
+  .price h3 + div {
+    margin-bottom: 32px;
+  }
+
+  .price span.text-5xl {
+    font-size: 224px;
+  }
+
+  .price span.text-2xl {
+    font-size: 82px;
+  }
+
+  .price a {
     font-size: 60px;
     padding: 24px 40px;
   }

@@ -8,9 +8,5 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\.winhairtj\.com$ [NC]
 RewriteRule ^(.*)$ https://winhairtj.com/$1 [L,R=301]
 
-<IfModule mod_rewrite.c>
-  RewriteBase /
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
-</IfModule>
+# 3️⃣ NO usar SPA fallback en Astro
+# Dejar que las URLs inexistentes devuelvan 404 real

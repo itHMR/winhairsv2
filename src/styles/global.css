@@ -130,8 +130,12 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 16px 24px;
   }
 
-  #home a, .home span, footer a {
+  #home a, .home span, footer a, .ad-text {
     font-size: 24px;
+  }
+
+  .ad-text-button {
+    font-size: 16px;
   }
 
   #info h2 {
@@ -164,7 +168,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 20px;
   }
 
-  #price .flex-wrap + span {
+  #price .bt-text {
     padding: 12px 8px;
   }
 
@@ -201,7 +205,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 72px;
   }
 
-  #techniques p {
+  #techniques p, #techniques .technique-text {
     font-size: 24px;
   }
 
@@ -272,8 +276,12 @@ input[type="number"]::-webkit-inner-spin-button {
     max-height: 100px;
   }
 
-  #home a, .home span, footer a {
+  #home a, .home span, footer a, .ad-text {
     font-size: 36px;
+  }
+
+  .ad-text-button {
+    font-size: 28px;
   }
 
   a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] {
@@ -368,9 +376,14 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 24px;
   }
 
-  #price .flex-wrap + span {
+  #price .bt-text {
     padding: 16px 12px;
     font-size: 48px;
+  }
+
+  #price .bt-text-copy {
+    padding: 16px 22px;
+    font-size: 38px;
   }
 
   #price .max-w-lg {
@@ -432,11 +445,11 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 28px;
   }
 
-  .price span.text-5xl {
+  .price span.text-4xl {
     font-size: 160px;
   }
 
-  .price span.text-2xl {
+  .price span.text-xl {
     font-size: 60px;
   }
 
@@ -448,7 +461,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 82px;
   }
 
-  #techniques p {
+  #techniques p, #techniques .technique-text {
     font-size: 30px;
   }
 
@@ -519,8 +532,12 @@ input[type="number"]::-webkit-inner-spin-button {
     max-height: 100px;
   }
 
-  #home a, .home span, footer a {
+  #home a, .home span, footer a, .ad-text {
     font-size: 36px;
+  }
+
+  .ad-text-button {
+    font-size: 28px;
   }
 
   a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] {
@@ -637,9 +654,14 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 12px;
   }
 
-  #price .flex-wrap + span {
+  #price .bt-text {
     padding: 20px 16px;
     font-size: 60px;
+  }
+
+  #price .bt-text-copy {
+    padding: 20px 26px;
+    font-size: 50px;
   }
 
   #price .max-w-lg {
@@ -714,11 +736,11 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 32px;
   }
 
-  .price span.text-5xl {
+  .price span.text-4xl {
     font-size: 192px;
   }
 
-  .price span.text-2xl {
+  .price span.text-xl {
     font-size: 72px;
   }
 
@@ -731,7 +753,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 92px;
   }
 
-  #techniques p {
+  #techniques p, #techniques .technique-text {
     font-size: 36px;
   }
 
@@ -818,8 +840,12 @@ input[type="number"]::-webkit-inner-spin-button {
     max-height: 100px;
   }
 
-  #home a, .home span, footer a {
+  #home a, .home span, footer a, .ad-text {
     font-size: 48px;
+  }
+
+  .ad-text-button {
+    font-size: 38px;
   }
 
   a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] {
@@ -944,9 +970,14 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 12px;
   }
 
-  #price .flex-wrap + span {
+  #price .bt-text {
     padding: 20px 16px;
     font-size: 60px;
+  }
+
+  #price .bt-text-copy {
+    padding: 20px 26px;
+    font-size: 50px;
   }
 
   #price .max-w-lg {
@@ -1021,11 +1052,11 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 32px;
   }
 
-  .price span.text-5xl {
+  .price span.text-4xl {
     font-size: 192px;
   }
 
-  .price span.text-2xl {
+  .price span.text-xl {
     font-size: 72px;
   }
 
@@ -1038,7 +1069,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 92px;
   }
 
-  #techniques p {
+  #techniques p, #techniques .technique-text {
     font-size: 36px;
   }
 
@@ -1114,8 +1145,12 @@ input[type="number"]::-webkit-inner-spin-button {
     max-height: 100px;
   }
 
-  #home a, .home span, footer a {
+  #home a, .home span, footer a, .ad-text {
     font-size: 48px;
+  }
+
+  .ad-text-button {
+    font-size: 38px;
   }
 
   a[href="https://wa.me/526634375455?text=I%20want%20to%20know%20more"] {
@@ -1248,9 +1283,14 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 12px;
   }
 
-  #price .flex-wrap + span {
+  #price .bt-text {
     padding: 24px 20px;
     font-size: 72px;
+  }
+
+  #price .bt-text-copy {
+    padding: 24px 34px;
+    font-size: 58px;
   }
 
   #price .max-w-lg {
@@ -1333,11 +1373,11 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 32px;
   }
 
-  .price span.text-5xl {
+  .price span.text-4xl {
     font-size: 224px;
   }
 
-  .price span.text-2xl {
+  .price span.text-xl {
     font-size: 82px;
   }
 
@@ -1350,7 +1390,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 102px;
   }
 
-  #techniques p {
+  #techniques p, #techniques .technique-text {
     font-size: 48px;
   }
 

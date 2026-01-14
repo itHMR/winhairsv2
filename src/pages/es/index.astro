@@ -1,43 +1,44 @@
 ---
-import Header from "../components/headerLanding.astro";
-import Hero from "../components/heroSection.astro";
-import Info from "../components/info.astro";
-import Slider from "../components/sliderSection.astro";
-import Price from "../components/price.astro";
-import Tech from "../components/technique.astro";
-import Question from "../components/questions.astro";
-import "../styles/global.css";
-import Form from "../components/form.astro";
-import Footer from "../components/footer.astro";
-import Reviews from "../components/reviews.astro";
-import Doctor from "../components/doctor.astro";
+import Header from "../../components/es/headerLanding.astro";
+import Hero from "../../components/es/heroSection.astro";
+import Info from "../../components/es/info.astro";
+import Slider from "../../components/es/sliderSection.astro";
+import Price from "../../components/es/price.astro";
+import Tech from "../../components/es/technique.astro";
+import Question from "../../components/es/questions.astro";
+import Layout from "../../layouts/Layout.astro";
+import Form from "../../components/es/form.astro";
+import Footer from "../../components/es/footer.astro";
+import Reviews from "../../components/es/reviews.astro";
+import Doctor from "../../components/es/doctor.astro";
+import "../../styles/global.css";
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Winhair - Hair transplant Clinic</title>
-		<meta name="description" content="Discover Winhair’s Hair Loss Permanent and Safe Solution. We're specializing in hair loss, hair restoration and hair transplantation. Don't waste your time traveling to India or Turkey, our amazing results with neograft hair transplant are here.">
+		<title>Winhair - Clínica de trasplante capilar</title>
+		<meta name="description" content="Descubra la solución permanente y segura de Winhair para la caída del cabello. Nos especializamos en la pérdida de cabello, la restauración capilar y el trasplante capilar. No pierda tiempo viajando a India o Turquía; aquí encontrará los increíbles resultados del trasplante capilar con neograft.">
 
 		<!-- Autor -->
 		<meta name="author" content="David Díaz">
 
 		<!-- SEO para Google -->
-		<link rel="canonical" href="https://winhairtj.com/">
+		<link rel="canonical" href="https://winhairtj.com/es/">
 
 		<!-- Hreflang -->
-		<link rel="alternate" hreflang="en" href="https://winhairtj.com/" />
 		<link rel="alternate" hreflang="es" href="https://winhairtj.com/es/" />
+		<link rel="alternate" hreflang="en" href="https://winhairtj.com/" />
 		<link rel="alternate" hreflang="x-default" href="https://winhairtj.com/" />
 
 		<!-- Redes Sociales (Open Graph) -->
-		<meta property="og:title" content="Winhair - Hair transplant Clinic">
-		<meta property="og:description" content="Discover Winhair’s Hair Loss Permanent and Safe Solution. We're specializing in hair loss, hair restoration and hair transplantation. Don't waste your time traveling to India or Turkey, our amazing results with neograft hair transplant are here.">
+		<meta property="og:title" content="Winhair - Clínica de trasplante capilar">
+		<meta property="og:description" content="Descubra la solución permanente y segura de Winhair para la caída del cabello. Nos especializamos en la pérdida de cabello, la restauración capilar y el trasplante capilar. No pierda tiempo viajando a India o Turquía; aquí encontrará los increíbles resultados del trasplante capilar con neograft.">
 		<meta property="og:image" content="https://winhairtj.com/winhair-logo.webp">
-		<meta property="og:url" content="https://winhairtj.com/">
+		<meta property="og:url" content="https://winhairtj.com/es/">
 		<meta property="og:type" content="website">
 		
 		<!-- Icon Font Stylesheet -->
@@ -83,6 +84,7 @@ import Doctor from "../components/doctor.astro";
 			</div>
 		</section> -->
 
+		
 		<Header/>
 		
 		<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">

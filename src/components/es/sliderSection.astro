@@ -1,0 +1,208 @@
+---
+import "../../styles/global.css";
+import BeforeAfter from "../BeforeAfter.astro";
+---
+<link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<!-- section md:px-32 lg:px-32 -->
+<!-- h2 md:text-3xl lg:text-3xl -->
+<section id="results" data-header-color="#91C1C1" data-header-logo="1" class="h-screen w-screen relative flex justify-center flex-col px-16 sm:px-16 py-8 md:px-22 lg:px-32 xl:px-52 2xl:px-72 md:py-14 xl:py-24">
+    <h2 data-animation="animate__pulse" class="animate__animated text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-6xl font-light font-[Poppins] my-8 lg:my-12 text-center md:text-right leading-tight">Gente real. Cabello real. <br><strong class="font-bold text-[#376374]">Resultados reales.</strong></h2>
+    <div data-animation="animate__pulse" class="animate__animated auto sm:w-full relative">
+        <div class="swiper mySwiper swiper-container relative">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <BeforeAfter id="1" before="slider/1.webp" after="slider/2.webp" />
+              </div>
+              <div class="swiper-slide">
+                  <BeforeAfter id="2" before="slider/3.webp" after="slider/4.webp" />
+              </div>
+              <div class="swiper-slide">
+                  <BeforeAfter id="3" before="slider/5.webp" after="slider/6.webp" />
+              </div>
+              <div class="swiper-slide">
+                  <BeforeAfter id="4" before="slider/1.webp" after="slider/2.webp" />
+              </div>
+              <div class="swiper-slide">
+                  <BeforeAfter id="5" before="slider/3.webp" after="slider/4.webp" />
+              </div>
+              <div class="swiper-slide">
+                  <BeforeAfter id="6" before="slider/5.webp" after="slider/6.webp" />
+              </div>
+          </div>
+          <div class="flex items-center gap-12 mt-10 md:mt-8 lg:justify-start justify-center">
+              <button id="slider-button-left" class="swiper-button-prev group !p-1 flex justify-center items-center border-2 border-solid border-[#005F6D] bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785] !w-14 !h-14 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5" data-carousel-prev="" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-83b612d6f76c1ac4">
+                  <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+              </button>
+              <button id="slider-button-right" class="swiper-button-next group !p-1 flex justify-center items-center border-2 border-solid border-[#005F6D] bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785] !w-14 !h-14 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5" data-carousel-next="" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-83b612d6f76c1ac4">
+                  <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+              </button>
+
+              <!--
+                <button id="slider-button-left" 
+                  class="swiper-button-prev group !p-2 flex justify-center items-center border-2 border-solid border-[#005F6D] 
+                        bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785] 
+                        !w-20 !h-20 md:!w-24 md:!h-24 transition-all duration-500 
+                        rounded-full !top-2/4 !-translate-y-8 !left-5 shadow-lg hover:shadow-2xl transform hover:scale-110"
+                  data-carousel-prev="" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-83b612d6f76c1ac4">
+
+                  <svg class="h-8 w-8 md:h-10 md:w-10 text-white transition-transform duration-500 group-hover:-translate-x-1" 
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
+                      <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+
+                <button id="slider-button-right" 
+                    class="swiper-button-next group !p-2 flex justify-center items-center border-2 border-solid border-[#005F6D] 
+                          bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785] 
+                          !w-20 !h-20 md:!w-24 md:!h-24 transition-all duration-500 
+                          rounded-full !top-2/4 !-translate-y-8 !right-5 shadow-lg hover:shadow-2xl transform hover:scale-110"
+                    data-carousel-next="" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-83b612d6f76c1ac4">
+
+                    <svg class="h-8 w-8 md:h-10 md:w-10 text-white transition-transform duration-500 group-hover:translate-x-1" 
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
+                        <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" 
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+              -->
+          </div>
+
+
+
+          <!-- <div class="swiper-pagination mt-6"></div>-->
+        </div>
+    </div>
+    <!-- Subtítulo -->
+    <h2 data-animation="animate__pulse" class="animate__animated text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-6xl font-light font-[Poppins] text-center">
+        Explora <strong class="font-bold text-[#376374]">sus historias.</strong>
+    </h2>
+</section>
+
+<script src="/js/jquery-3.7.1.min.js" type="text/javascript" is:inline></script>
+<script src="/js/jquery.event.move.js" type="text/javascript" is:inline></script>
+<script src="/js/jquery.twentytwenty.js" type="text/javascript" is:inline></script>
+<script is:inline type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+  new Swiper('.mySwiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    allowTouchMove: false,
+    navigation: {
+        nextEl: ".mySwiper .swiper-button-next",
+        prevEl: ".mySwiper .swiper-button-prev",
+    },
+    /*autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },*/
+    breakpoints: {
+        1920: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        990: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        840: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+    }
+  });
+
+  /*window.addEventListener('load', function () {
+    // Inicializa todas las instancias
+    $('.twentytwenty-container').each(function () {
+      $(this).twentytwenty({
+        default_offset_pct: 0.5,
+        before_label: 'Before',
+        after_label: 'After',
+        no_overlay: false
+      });
+    });
+
+    // Pequeño ajuste para recalcular al cambiar de slide
+    window.dispatchEvent(new Event('resize'));
+  });*/
+
+  function initTwentyTwenty() {
+    $('.twentytwenty-container').each(function () {
+      if (!$(this).data("twentytwenty")) { // evitar reinicialización doble
+        $(this).twentytwenty({
+          default_offset_pct: 0.5,
+          before_label: 'Before',
+          after_label: 'After',
+          no_overlay: false
+        });
+      }
+    });
+  }
+
+  function imagesLoaded(container, callback) {
+    const images = container.getElementsByTagName('img');
+    let loaded = 0;
+    let count = images.length;
+
+    if (count === 0) {
+      callback();
+      return;
+    }
+
+    for (let img of images) {
+      if (img.complete) {
+        loaded++;
+        if (loaded === count) callback();
+      } else {
+        img.addEventListener('load', () => {
+          loaded++;
+          if (loaded === count) callback();
+        });
+        img.addEventListener('error', () => {
+          loaded++;
+          if (loaded === count) callback();
+        });
+      }
+    }
+  }
+
+  window.addEventListener('load', function () {
+    const containers = document.querySelectorAll('.twentytwenty-container');
+    containers.forEach(container => {
+      imagesLoaded(container, () => {
+        initTwentyTwenty();
+      });
+    });
+  });
+
+  // reinit en resize (pero con debounce para no sobrecargar)
+  let resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      $('.twentytwenty-container').data("twentytwenty", null); // reset plugin
+      initTwentyTwenty();
+    }, 200);
+  });
+</script>
+

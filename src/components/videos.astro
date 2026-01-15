@@ -1,0 +1,100 @@
+---
+import "../styles/global.css";
+import MovileMockup from "./movileMockup.astro";
+import MovileMockupWeb from "./movileMockupWeb.astro";
+---
+<section id="reviews" data-header-color="#91C1C1" data-header-logo="1" class="bg-[#91C1C1] h-screen w-screen relative flex flex-col items-center justify-center px-6 py-8 md:px-12 lg:px-14 xl:px-32 md:py-14 xl:py-24">
+    <h2 data-animation="animate__pulse" class="animate__animated text-4xl md:text-5xl xl:text-6xl font-medium font-[Poppins] mt-8 lg:mt-12 mb-2 text-center md:text-right text-white">More amazing testimonials</h2>
+    <h3 data-animation="animate__pulse" class="animate__animated text-xl md:text-2xl xl:text-3xl font-light font-[Poppins] mb-8 lg:mb-12 text-center md:text-right text-white">Ready for more inspiring hair stories?</h3>
+    
+    <!-- Grid Web -->
+    <div class="hidden md:grid grid-cols-2 gap-19">
+        <MovileMockupWeb id="1" url="https://www.youtube.com/embed/1eg1XPjc1X0?controls=1&modestbranding=1" />
+        <MovileMockupWeb id="2" url="https://www.youtube.com/embed/fIlUcljUUhc?controls=1&modestbranding=1" />
+    </div>
+
+    <!-- Slider Mobile -->
+    <div class="block md:hidden relative w-full max-w-[520px] md:max-w-[700px] overflow-hidden">
+        <div
+        id="sliderTrack"
+        class="flex transition-transform duration-500 ease-out"
+        >
+        <div class="min-w-full md:min-w-1/2 flex justify-center">
+            <MovileMockup url="/videos/video1.webm" url1="/videos/video1.mp4" />
+        </div>
+        <div class="min-w-full md:min-w-1/2 flex justify-center">
+            <MovileMockup url="/videos/video2.webm" url1="/videos/video2.mp4" />
+        </div>
+        </div>
+
+        <!-- Botones -->
+        <!--<button id="prevBtn" class="slider-btn left-2">‹</button>
+        <button id="nextBtn" class="slider-btn right-2">›</button>-->
+        <button id="prevBtn" class="swiper-button-prev group !p-1 flex justify-center items-center border-2 border-solid border-[#005F6D] bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785] !w-14 !h-14 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-1" data-carousel-prev="" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-83b612d6f76c1ac4">
+            <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </button>
+        <button id="nextBtn" class="swiper-button-next group !p-1 flex justify-center items-center border-2 border-solid border-[#005F6D] bg-[#005F6D] hover:bg-[#547785] hover:border-[#547785] !w-14 !h-14 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-1" data-carousel-next="" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-83b612d6f76c1ac4">
+            <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </button>
+    </div>
+</section>
+<script is:inline>
+  const track = document.getElementById('sliderTrack')
+  const slides = track.children
+  const prev = document.getElementById('prevBtn')
+  const next = document.getElementById('nextBtn')
+
+  let index = 0
+
+  function update() {
+    track.style.transform = `translateX(-${index * 100}%)`
+  }
+
+  prev.onclick = () => {
+    pauseAllVideos();
+    index = index === 0 ? slides.length - 1 : index - 1
+    update()
+  }
+
+  next.onclick = () => {
+    pauseAllVideos();
+    index = index === slides.length - 1 ? 0 : index + 1
+    update()
+  }
+
+  /* Swipe en móvil */
+  let startX = 0
+  track.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX
+  })
+
+  track.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX
+    if (startX - endX > 50) next.click()
+    if (endX - startX > 50) prev.click()
+  })
+
+    document.querySelectorAll('.mockup-video').forEach(video => {
+        video.addEventListener('click', () => {
+        if (video.paused) {
+            video.muted = false;
+            video.play();
+        } else {
+            video.pause();
+        }
+        });
+    });
+
+    function pauseAllVideos() {
+        document.querySelectorAll('.mockup-video').forEach(video => {
+            video.pause();
+            video.currentTime = 0;
+            video.muted = true;
+        });
+    }
+
+</script>

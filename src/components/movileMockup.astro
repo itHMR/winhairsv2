@@ -1,0 +1,37 @@
+---
+const { url, url1 } = Astro.props;
+---
+<div class="relative mx-auto border-default bg-base border-[12px] rounded-[2rem]
+    h-[370px] w-[180px] md:h-[400px] md:w-[200px] 2xl:h-[520px] 2xl:w-[260px]
+    shadow-2xl
+    transition-transform duration-500
+    hover:scale-[1.03]">
+
+    <!-- Botones laterales -->
+    <div class="h-[18px] w-[3px] md:h-[20px] md:w-[3px] 2xl:h-[28px] 2xl:w-[3px] bg-base absolute -start-[15px] top-[70px] rounded-s-lg"></div>
+    <div class="h-[26px] w-[3px] md:h-[30px] md:w-[3px] 2xl:h-[40px] 2xl:w-[3px] bg-base absolute -start-[15px] top-[115px] rounded-s-lg"></div>
+    <div class="h-[26px] w-[3px] md:h-[30px] md:w-[3px] 2xl:h-[40px] 2xl:w-[3px] bg-base absolute -start-[15px] top-[165px] rounded-s-lg"></div>
+    <div class="h-[36px] w-[3px] md:h-[46px] md:w-[3px] 2xl:h-[56px] 2xl:w-[3px] bg-base absolute -end-[15px] top-[135px] rounded-e-lg"></div>
+
+    <!-- Pantalla -->
+    <div class="rounded-[1.6rem] overflow-hidden w-[156px] h-[348px] md:w-[176px] md:h-[378px] 2xl:w-[236px] 2xl:h-[496px] bg-black">
+        <!--<iframe
+        class="w-full h-full"
+        src=`${url}`
+        title="Google Reviews"
+        frameborder="0"
+        allow="encrypted-media; picture-in-picture"
+        allowfullscreen>
+        </iframe>-->
+        <video
+            class="mockup-video w-full h-full object-cover"
+            loop
+            playsinline
+            muted
+            preload="metadata">
+            <source src=`${url}` type="video/webm" />
+            <source src=`${url1}` type="video/mp4" />
+            Tu navegador no soporta video.
+        </video>
+    </div>
+</div>

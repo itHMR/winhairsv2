@@ -13,6 +13,28 @@ import "../../styles/global.css";
 
 <!-- Script para ocultar el enlace -->
 <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const interval = setInterval(() => {
+      const widget = document.querySelector(".commonninja_component");
+
+      if (widget && widget.shadowRoot) {
+        const cards = widget.shadowRoot.querySelectorAll(".review-item");
+
+        const links = document.querySelectorAll('.commonninja-ribbon');
+        links.forEach(link => (link.style.display = 'none !important'));
+
+        if (cards.length) {
+          cards.forEach(card => {
+            card.style.maxHeight = "356px";
+            card.style.minHeight = "200px";
+            card.style.padding = "0 25px 25px";
+          });
+          clearInterval(interval);
+        }
+      }
+    }, 300);
+  });
+  
   function hideElfsightLink() {
     const links = document.querySelectorAll('.elfsight-app-5cee13ba-444b-49d5-8f46-685245f008d8 a[href*="elfsight.com"]');
     links.forEach(link => (link.style.display = 'none'));

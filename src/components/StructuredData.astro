@@ -1,0 +1,142 @@
+---
+const { lang = "en" } = Astro.props;
+
+const baseUrl = lang === "es"
+  ? "https://winhairtj.com/es/"
+  : "https://winhairtj.com";
+
+const faq = lang === "es"
+  ? [
+      {
+        q: "¿Qué tratamientos ofrecen?",
+        a: "Nos especializamos en procedimientos de restauración capilar como técnica FUE, injerto de barba y ceja y terapia PRP."
+      },
+      {
+        q: "¿Soy candidato?",
+        a: "Si tienes pérdida de cabello estable y buena densidad en la zona donante, probablemente sí. Una consulta médica determinará el tratamiento ideal."
+      },
+      {
+        q: "¿Es doloroso?",
+        a: "Se utiliza anestesia local durante el procedimiento. Puede existir molestia leve posterior que es manejable."
+      }
+    ]
+  : [
+      {
+        q: "What treatments do you offer?",
+        a: "We specialize in hair restoration procedures such as FUE hair transplants, beard and eyebrow transplants and PRP therapy."
+      },
+      {
+        q: "Am I a candidate for a hair transplant?",
+        a: "Ideal candidates have stable hair loss and good donor density. A consultation determines the best treatment."
+      },
+      {
+        q: "Is the procedure painful?",
+        a: "Procedures use local anesthesia so there is no pain during treatment. Mild discomfort afterward is manageable."
+      }
+    ];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "MedicalBusiness",
+      "@id": `${baseUrl}#business`,
+      "name": "WinHair",
+      "alternateName": "WinHair Tijuana",
+      "url": baseUrl,
+      "logo": "https://winhairtj.com/winhair-logo.webp",
+
+      "telephone": [
+        "+16199466456",
+        "+526634375455"
+      ],
+
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Diego Rivera 2339 - Int. 201, Zona Urbana Rio Tijuana",
+        "addressLocality": "Tijuana",
+        "addressRegion": "BC",
+        "postalCode": "22010",
+        "addressCountry": "MX"
+      },
+
+      "areaServed": { "@type": "City", "name": "Tijuana" },
+
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+        ],
+        "opens": "10:00",
+        "closes": "16:00"
+      },
+
+      "availableLanguage": ["Spanish","English"],
+
+      "sameAs": [
+        "https://www.facebook.com/winhairtj",
+        "https://www.instagram.com/winhairtj"
+      ],
+
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3"
+      },
+
+      "employee": {
+        "@type": "Physician",
+        "name": "Dr. Sergio Piña Ruiz",
+        "medicalSpecialty": "CosmeticSurgery",
+        "description": "Expert in Hair Restoration with over 7 years of experience. Master's in Aesthetic Surgery.",
+        "knowsAbout": [
+          "FUE Technique",
+          "DHI Technique",
+          "Hair Transplant",
+          "Hair Restoration"
+        ],
+        "license": "5638574"
+      }
+    },
+
+    {
+      "@type": "Service",
+      "name": "Hair Transplant",
+      "provider": { "@id": `${baseUrl}#business` },
+      "offers": {
+        "@type": "Offer",
+        "price": "2200.00",
+        "priceCurrency": "USD"
+      }
+    },
+
+    {
+      "@type": "Service",
+      "name": "PRP Hair Therapy",
+      "provider": { "@id": `${baseUrl}#business` },
+      "offers": {
+        "@type": "Offer",
+        "price": "120.00",
+        "priceCurrency": "USD"
+      }
+    },
+
+    {
+      "@type": "FAQPage",
+      "inLanguage": lang,
+      "mainEntity": faq.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a
+        }
+      }))
+    }
+
+  ]
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

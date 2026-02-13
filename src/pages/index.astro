@@ -12,6 +12,7 @@ import Footer from "../components/footer.astro";
 import Reviews from "../components/reviews.astro";
 import Doctor from "../components/doctor.astro";
 import Videos from "../components/videos.astro";
+import StructuredData from "../components/StructuredData.astro";
 ---
 
 <html lang="en">
@@ -20,7 +21,7 @@ import Videos from "../components/videos.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Hair Transplant Tijuana | $2,200 Unlimited Grafts | Winhair</title>
+		<title>WinHair Tijuana</title>
 		<meta name="description" content="Get maximum density for a flat fee of $2,200. No graft limits. Only 5 mins from the San Ysidro border. Led by Dr. Sergio Piña. Book with a $300 deposit!">
 
 		<!-- Autor -->
@@ -35,7 +36,7 @@ import Videos from "../components/videos.astro";
 		<link rel="alternate" hreflang="x-default" href="https://winhairtj.com/" />
 
 		<!-- Redes Sociales (Open Graph) -->
-		<meta property="og:title" content="Hair Transplant Tijuana | $2,200 Unlimited Grafts | Winhair">
+		<meta property="og:title" content="WinHair Tijuana">
 		<meta property="og:description" content="Get maximum density for a flat fee of $2,200. No graft limits. Only 5 mins from the San Ysidro border. Led by Dr. Sergio Piña. Book with a $300 deposit!">
 		<meta property="og:image" content="https://winhairtj.com/winhair-logo.webp">
 		<meta property="og:url" content="https://winhairtj.com/">
@@ -53,6 +54,9 @@ import Videos from "../components/videos.astro";
 		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=es">
 		<!-- Cargar SweetAlert2 desde un CDN -->
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" is:inline defer></script>
+
+		<!-- JSON-LD -->
+		<StructuredData lang="en" />
 		
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
